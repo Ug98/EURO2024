@@ -38,13 +38,64 @@ const renderHome = () => {
 
 const renderGroupStage = () => {
   document.querySelector(CONTAINER_SELECTOR).innerHTML = `
-    <div id="group-stage">
-      <h1>Group Stage</h1>
-      <div class="content">
-        <img src="images/group-stage.jpg" alt="Group Stage">
-        <!-- Add more content as needed -->
-      </div>
+ <div id="group-stage">
+  <div class="content">
+    <div class="box">
+      <h2>Group A</h2>
+      <ul>
+        <li>Germany</li>
+        <li>Switzerland</li>
+        <li>Hungary</li>
+        <li>Scotland</li>
+      </ul>
     </div>
+    <div class="box">
+      <h2>Group B</h2>
+      <ul>
+        <li>Spain</li>
+        <li>Italy</li>
+        <li>Albania</li>
+        <li>Croatia</li>
+      </ul>
+    </div>
+    <div class="box">
+      <h2>Group C</h2>
+      <ul>
+        <li>England</li>
+        <li>Denmark</li>
+        <li>Slovenia</li>
+        <li>Serbia</li>
+      </ul>
+    </div>
+    <div class="box">
+      <h2>Group D</h2>
+      <ul>
+        <li>Austria</li>
+        <li>France</li>
+        <li>Netherlands</li>
+        <li>Poland</li>
+      </ul>
+    </div>
+    <div class="box">
+      <h2>Group E</h2>
+      <ul>
+        <li>Romania</li>
+        <li>Belgium</li>
+        <li>Slovakia</li>
+        <li>Ukraine</li>
+      </ul>
+    </div>
+    <div class="box">
+      <h2>Group F</h2>
+      <ul>
+        <li>Portugal</li>
+        <li>Turkie</li>
+        <li>Georgia</li>
+        <li>Czechia</li>
+      </ul>
+    </div>
+  </div>
+</div>
   `;
 };
 
