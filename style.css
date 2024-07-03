@@ -14,6 +14,10 @@ nav {
   justify-content: center;
   align-items: center;
 }
+.nav-link{
+  background-color: aqua;
+  color: green;
+}
 
 .conteiner {
   display: flex;
@@ -27,11 +31,25 @@ nav {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   justify-content: center;
-  gap: 10px; /* Space between images */
+  justify-items: center;
+  gap: 10px; 
 }
 
 .images img {
   margin: 10px; 
   width: 150px; 
   height: 100px; 
+}
+h1 {
+  text-align: center;
+}
+.content {
+  display: flex;
+  justify-content: center; 
+  align-items: center; 
+  margin-top: 30px; 
+}
+
+.content img {
+  max-width: 60%; 
 }
