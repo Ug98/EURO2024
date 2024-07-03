@@ -1,4 +1,37 @@
 body {
-  background-image: url('stadium.jpg');
-  background-position: center top; /* Optional: Center the image */
+  background-image: url('images/stadium.jpg');
+  background-position: center top;
+}
+
+nav {
+  grid-area: menu;
+  height: 60px;
+  font-size: 1.75em;
+  line-height: 60px;
+  padding: 20px;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.conteiner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.images {
+  margin-top: 20px; 
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  justify-content: center;
+  gap: 10px; /* Space between images */
+}
+
+.images img {
+  margin: 10px; 
+  width: 150px; 
+  height: 100px; 
 }
