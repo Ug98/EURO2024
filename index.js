@@ -8,7 +8,6 @@ const renderHome = () => {
   document.querySelector(CONTAINER_SELECTOR).innerHTML = `
     <h1>Teams Qualified</h1>
     <div class="images">
-      <img src="images/deutschland.gif" alt="Germany">
       <img src="images/spain.png" alt="Spain">
       <img src="images/croatia-flag-png-xl.png" alt="Croatia">
       <img src="images/albania.png" alt="Albania">
@@ -17,6 +16,7 @@ const renderHome = () => {
       <img src="images/Flag_of_Slovenia.png" alt="Slovenia">
       <img src="images/italy.png" alt="Italy">
       <img src="images/1200px-Flag_of_Serbia.png" alt="Serbia">
+      <img src="images/deutschland.gif" alt="Germany">
       <img src="images/belgium.png" alt="Belgium">
       <img src="images/ukraine.png" alt="Ukraine">
       <img src="images/georgia.png" alt="Georgia">
@@ -39,6 +39,7 @@ const renderHome = () => {
 const renderGroupStage = () => {
   document.querySelector(CONTAINER_SELECTOR).innerHTML = `
  <div id="group-stage">
+ <h1>Group Stage</h1>
   <div class="content">
     <div class="box">
       <h2>Group A</h2>
@@ -114,10 +115,23 @@ const renderKnockOut = () => {
   document.querySelector(CONTAINER_SELECTOR).innerHTML = `
     <div id="knock-out">
       <h1>Knock Out Stage</h1>
-      <div class="content">
-        <img src="images/knock-out.jpg" alt="Knock Out Stage">
-        <!-- Add more content as needed -->
-      </div>
+      <div class="results">
+        <h1>Round of 16</h1>
+        <h2><img id="result-img" src="images/spain.png" alt="Spain"> Spain 4:1 Georgia <img id="result-img" src="images/georgia.png" alt="Georgia"></h2>
+        <h2><img id="result-img" src="images/deutschland.gif" alt="Germany"> Germany 2:0 Denmark <img id="result-img" src="images/denmaark.png" alt="denmaark"> </h2>
+        <h2><img id="result-img" src="images/portugal.png" alt="portugal"> Portugal 0(3):0(0) Slovenia <img id="result-img" src="images/Flag_of_Slovenia.png" alt="Slovenia"> </h2>
+        <h2><img id="result-img" src="images//france.png" alt="France"> France 1:0 Belgium <img id="result-img" src="images/belgium.png" alt="Belgium"> </h2>
+        <h2><img id="result-img" src="images/romania.png" alt="Romania"> Romania 0:3 Netherlands <img id="result-img" src="images/netherlands.png" alt="Netherlands"> </h2>
+        <h2><img id="result-img" src="images/austria.png" alt="Austria"> Austria 1:2 Turike <img id="result-img" src="images/turkie.png" alt="Turkie"> </h2>
+        <h2><img id="result-img" src="images/england.png" alt="England"> England 2:1 Slovakia <img id="result-img" src="images/Flag_of_Slovakia.png" alt="Slovakia"> </h2>
+        <h2><img id="result-img" src="images/swiss.png" alt="Swiss"> Switzerland 2:0 Italy <img id="result-img" src="images/italy.png" alt="Italy"> </h2>
+        <h1>Quarterfinals</h1>
+        <h2><img id="result-img" src="images/spain.png" alt="Spain"> Spain : Germany <img id="result-img" src="images/deutschland.gif" alt="Germany"></h2>
+        <h2><img id="result-img" src="images/portugal.png" alt="portugal"> Portugal : France <img id="result-img" src="images//france.png" alt="France"> </h2>     
+        <h2><img id="result-img" src="images/netherlands.png" alt="Netherlands"> Netherlands : Turike <img id="result-img" src="images/turkie.png" alt="Turkie"> </h2> 
+        <h2><img id="result-img" src="images/england.png" alt="England"> England : Switzerland <img id="result-img" src="images/swiss.png" alt="Swiss"> </h2>
+                <h1>Semifinals</h1>
+    </div>
     </div>
   `;
 };
