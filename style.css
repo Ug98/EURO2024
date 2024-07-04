@@ -1,6 +1,10 @@
 body {
-  background-image: url('images/stadium.jpg');
+  background-image: url('images/backgraund.jpg');
   background-position: center top;
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin: 0;
+  padding: 0;
 }
 
 nav {
@@ -13,6 +17,7 @@ nav {
   display: flex;
   justify-content: center;
   align-items: center;
+
 }
 
 .nav-link {
@@ -33,17 +38,17 @@ nav {
   grid-template-columns: repeat(4, 1fr);
   justify-content: center;
   justify-items: center;
-  gap: 10px;
+  gap: 20px;
 }
 
 .images img {
-  margin: 10px;
   width: 150px;
   height: 100px;
 }
 
 h1 {
   text-align: center;
+  color: blueviolet;
 }
 
 .content {
@@ -58,10 +63,11 @@ h1 {
 }
 
 .box {
-  border: 2px solid #0a0909;
+  margin-top: 10px;
+  border: 2px solid #232222;
   padding: 20px;
   margin-bottom: 10px;
-  color: orange;
+  color:rebeccapurple;
 }
 
 .box h2 {
@@ -71,8 +77,22 @@ h1 {
 .box ul {
   list-style-type: none;
   padding: 0;
+  font-weight: bold;
+  
 }
 
 .box ul li {
   margin-bottom: 10px;
+  
+}
+
+#points {
+  font-weight: bold; /* Makes the text bold */
+  font-size: 16px;   /* Increases the font size */
+  color: wheat;      /* Sets the text color to black */
+  margin-left: 10px;
+}
+
+#view-btn{
+  background-color: bisque;
 }

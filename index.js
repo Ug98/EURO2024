@@ -43,56 +43,67 @@ const renderGroupStage = () => {
     <div class="box">
       <h2>Group A</h2>
       <ul>
-        <li>Germany</li>
-        <li>Switzerland</li>
-        <li>Hungary</li>
-        <li>Scotland</li>
-      </ul>
+        <li>Germany <span id="points">7 pts</span></li></li>
+        <li>Switzerland <span id="points">5 pts</span></li>
+        <li>Hungary <span id="points">3 pts</span></li>
+        <li>Scotland <span id="points">1 pt</span></li>
+        </ul>
+        <button id="view-btn">View Results</button>
     </div>
     <div class="box">
       <h2>Group B</h2>
       <ul>
-        <li>Spain</li>
-        <li>Italy</li>
-        <li>Albania</li>
-        <li>Croatia</li>
+        <li>Spain <span id="points">9 pts</span></li>
+        <li>Italy <span id="points">4 pts</span></li>
+        <li>Albania <span id="points">2 pts</span></li>
+        <li>Croatia <span id="points">1 pt</span></li>
       </ul>
+        <button id="view-btn">View Results</button>
     </div>
     <div class="box">
       <h2>Group C</h2>
       <ul>
-        <li>England</li>
-        <li>Denmark</li>
-        <li>Slovenia</li>
-        <li>Serbia</li>
+        <li>England <span id="points">5 pts</span></li>
+        <li>Denmark <span id="points">3 pts</span></li>
+        <li>Slovenia <span id="points">3 pts</span></li>
+        <li>Serbia <span id="points">2 pts</span></li>
       </ul>
+        <button id="view-btn">View Results</button>
+      
     </div>
     <div class="box">
       <h2>Group D</h2>
       <ul>
-        <li>Austria</li>
-        <li>France</li>
-        <li>Netherlands</li>
-        <li>Poland</li>
+        <li>Austria <span id="points">6 pts</span></li>
+        <li>France <span id="points">5 pts</span></li>
+        <li>Netherlands <span id="points">4 pts</span></li>
+        <li>Poland <span id="points">1 pt</span></li>
       </ul>
+        <button id="view-btn">View Results</button>
+
     </div>
     <div class="box">
       <h2>Group E</h2>
       <ul>
-        <li>Romania</li>
-        <li>Belgium</li>
-        <li>Slovakia</li>
-        <li>Ukraine</li>
+        <li>Romania <span id="points">4 pts</span></li> 
+        <li>Belgium <span id="points">4 pts</span></li>
+        <li>Slovakia <span id="points">4 pts</span></li>
+        <li>Ukraine <span id="points">4 pts</span></li>
       </ul>
+        <button id="view-btn">View Results</button>
+
     </div>
     <div class="box">
       <h2>Group F</h2>
       <ul>
-        <li>Portugal</li>
-        <li>Turkie</li>
-        <li>Georgia</li>
-        <li>Czechia</li>
+        <li>Portugal <span id="points">6 pts</span></li>
+        <li>Turkie <span id="points">6 pts</span></li>
+        <li>Georgia <span id="points">4 pts</span></li>
+        <li>Czechia <span id="points">1 pt</span></li>
+        
       </ul>
+        <button id="view-btn">View Results</button>
+
     </div>
   </div>
 </div>
@@ -151,7 +162,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
   navLinks.forEach(function (link) {
     link.addEventListener('click', function (event) {
-      event.preventDefault(); 
+      event.preventDefault();
 
       const page = link.getAttribute('data-page');
 
