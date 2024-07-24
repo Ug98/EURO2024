@@ -1,8 +1,5 @@
-const HOME = "home";
-const GROUP_STAGE = "groupStage";
-const KNOCK_OUT = "knockOut";
-const FINAL = "final";
-const CONTAINER_SELECTOR = '#container';
+import { renderFinal } from "../final-view.js";
+import { HOME,CONTAINER_SELECTOR,FINAL,GROUP_STAGE,KNOCK_OUT } from "./constants.js";
 
 const renderHome = () => {
   document.querySelector(CONTAINER_SELECTOR).innerHTML = `
@@ -137,16 +134,7 @@ const renderKnockOut = () => {
   `;
 };
 
-const renderFinal = () => {
-  document.querySelector(CONTAINER_SELECTOR).innerHTML = `
-    <div id="final">
-      <h1>Final</h1>
-      <div class="content">
-        <!-- Add content for Final stage -->
-      </div>
-    </div>
-  `;
-};
+
 
 const loadPage = (page = '') => {
   switch (page) {
